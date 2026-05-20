@@ -1,0 +1,13 @@
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #555;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}

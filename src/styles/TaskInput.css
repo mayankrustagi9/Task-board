@@ -1,0 +1,45 @@
+.task-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.task-input input[type="text"] {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  background: #1e2130;
+  border: 1px solid #2e3250;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.task-input input[type="text"]:focus {
+  outline: none;
+  border-color: #4f86c6;
+}
+
+.task-input select {
+  padding: 0.6rem 0.5rem;
+  background: #1e2130;
+  border: 1px solid #2e3250;
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.task-input button {
+  padding: 0.6rem 1.2rem;
+  background: #4f86c6;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.task-input button:hover {
+  background: #3a6fa8;
+}
