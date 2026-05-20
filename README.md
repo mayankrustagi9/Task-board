@@ -1,27 +1,33 @@
-# Task Board — Todo App
+# Priority Planner
 
-A polished React todo application with dark theme, category filtering, and progress tracking.
+A React + Vite todo app with a clean dark UI.
 
-## Getting Started
+## Setup
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open http://localhost:5173
 
-## Features
+## Project Structure
 
-- Add tasks with Personal / Work / Urgent categories
-- Check off tasks to mark them complete
-- Filter by All / Active / Completed
-- Inline editing (click pencil icon, press Enter to save, Escape to cancel)
-- Progress bar and stats (Total / Active / Done)
-- Clear all completed tasks at once
-
-## Build for Production
-
-```bash
-npm run build
+```
+src/
+├── main.jsx              # Entry point
+├── App.jsx               # Root component
+├── constants.js          # Categories, initial data, helpers
+├── components/
+│   ├── Header.jsx        # Title + subtitle
+│   ├── Stats.jsx         # Total / Active / Done cards
+│   ├── ProgressBar.jsx   # Completion progress bar
+│   ├── TaskInput.jsx     # Category selector + input field
+│   ├── FilterTabs.jsx    # All / Active / Completed tabs
+│   ├── TodoList.jsx      # List container + empty state + footer
+│   ├── TodoItem.jsx      # Single task row with edit/delete
+│   ├── Legend.jsx        # Category color legend
+│   └── Icons.jsx         # SVG icons (Check, Trash, Pen)
+└── styles/
+    └── index.css         # All global styles
 ```
